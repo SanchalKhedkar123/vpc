@@ -133,7 +133,7 @@ resource "aws_instance" "ins" {
     Name = "intance_1"
   }
 }
-##############################autoscalling##########
+###############################autoscalling##########
 
 resource "aws_autoscaling_group" "nginx_asg" {
   launch_configuration = aws_launch_configuration.nginx.id
